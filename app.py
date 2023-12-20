@@ -47,7 +47,12 @@ def works():
 
 @app.route("/error")
 def error():
-    # raises an UnboundLocalError
-    raise UnboundLocalError()
+    d = 5
+    c = 3.14 * d
+    print(d)
+    print(c)
+    print("hello server")
+    # this raises an error
+    raise TypeError()
 
 
