@@ -18,3 +18,13 @@ app = Flask(__name__)
 def hello_world():
     1/0  # raises an error
     return "<p>Hello, World!</p>"
+
+@app.route("/works")
+def works():
+    return "<p>This works</p>"
+
+@app.route("/error")
+def error():
+    raise Exception
+
+
