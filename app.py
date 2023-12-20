@@ -23,7 +23,7 @@ def hello_world():
     # this will print to the server
     print(i/j)
     print(k == 3)
-    print(k*l)
+    print(k)
     j/i  # raises an error
     return "<p>Hello, World!</p>"
 
@@ -51,8 +51,7 @@ def error():
     c = 3.14 * d
     print(d)
     print(c)
-    print("hello server")
     # this raises an error
-    raise TypeError()
+    return "<p>Fakes an error</p>"
 
 
