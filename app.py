@@ -23,16 +23,31 @@ def hello_world():
     # this will print to the server
     print(i/j)
     print(k == 3)
-    print(l)
+    print(k*l)
     j/i  # raises an error
     return "<p>Hello, World!</p>"
 
 @app.route("/works")
 def works():
-    return "<p>This works</p>"
+    # Lorem ipsum dolor sit amet, consectetur 
+    # adipiscing elit. Vestibulum commodo nunc 
+    # vitae lacus molestie fringilla. Aenean 
+    # luctus magna nec tempus bibendum. Etiam 
+    # molestie, neque at efficitur placerat, nibh 
+    # orci tincidunt mi, fermentum blandit ligula 
+    # mi luctus tellus. Nullam venenatis diam 
+    # ultricies, euismod ex sed, suscipit turpis. 
+    # Vivamus porta augue magna, at consequat leo 
+    # molestie at. In non sollicitudin massa, in 
+    # tincidunt ipsum. Aliquam erat volutpat. 
+    # Mauris tortor sem, lacinia nec viverra eget, 
+    # sollicitudin sit amet diam. Pellentesque a 
+    # nulla a ante blandit sagittis. 
+    return "<p>Changing the text</p>"
 
 @app.route("/error")
 def error():
-    raise Exception
+    # raises an UnboundLocalError
+    raise UnboundLocalError()
 
 
