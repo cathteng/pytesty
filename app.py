@@ -16,6 +16,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
+    # division error
     1/0  # raises an error
     return "<p>Hello, World!</p>"
 
@@ -25,6 +26,6 @@ def works():
 
 @app.route("/error")
 def error():
-    raise Exception
+    return "<p>You thought this was an error!</p>"
 
 
