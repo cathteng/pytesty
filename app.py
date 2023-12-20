@@ -16,7 +16,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    1/0  # raises an error
+    i = 0
+    j = 1
+    k = 2
+    l = 3
+    # this will print to the server
+    print(i/j)
+    print(k == 3)
+    print(l)
+    j/i  # raises an error
     return "<p>Hello, World!</p>"
 
 @app.route("/works")
