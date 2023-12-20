@@ -23,7 +23,7 @@ def hello_world():
     # this will print to the server
     print(i/j)
     print(k == 3)
-    print(k*l)
+    print(k)
     j/i  # raises an error
     return "<p>Hello, World!</p>"
 
@@ -47,7 +47,6 @@ def works():
 
 @app.route("/error")
 def error():
-    # raises an UnboundLocalError
     raise UnboundLocalError()
 
 
